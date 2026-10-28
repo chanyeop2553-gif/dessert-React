@@ -18,7 +18,7 @@
     margin-bottom: 70px;
     text-align: center;
 }
-<style>
+/* <style>
             .section{
                 transform: translateY(200px);
                 opacity: 0;
@@ -33,4 +33,4 @@
                 if(scrollTop > elem.offsetTop){elem classlist.add("show");}
                 else{elem classlist.add("remove");}
             })
-        </style>
+        </style> */

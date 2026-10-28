@@ -1,0 +1,22 @@
+#header {
+}
+.header_inner {
+    width: 100%;
+    height: 125px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #bbb;
+}
+.header_logo {
+    font-size: 48px;
+    text-transform: uppercase;
+}
+.header_logo em {
+    font-size: 20px;
+}
+.header_nav ul {
+    display: flex;
+}
+.header_nav ul li {
+}
