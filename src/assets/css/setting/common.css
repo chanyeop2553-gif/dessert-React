@@ -1,0 +1,36 @@
+/*common*/
+.container {
+    width: 1160px;
+    margin: 0 aut0;
+}
+
+.section {
+    padding: 120px 0;
+}
+.section > h2 {
+    font-size: 50px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+.section > p {
+    font-size: 22px;
+    font-weight: 300;
+    margin-bottom: 70px;
+    text-align: center;
+}
+<style>
+            .section{
+                transform: translateY(200px);
+                opacity: 0;
+                transition: all 1s;
+            }
+            .section.show{
+                transform: translateY(0px);
+                opacity: 1;
+            }
+            let section = document.querySelectorAll(".section");
+            section,Foreach((elem)=>{
+                if(scrollTop > elem.offsetTop){elem classlist.add("show");}
+                else{elem classlist.add("remove");}
+            })
+        </style>
