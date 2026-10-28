@@ -1,5 +1,30 @@
  import React from "react"
  import {cardData} from "../data/cardData"
+import { ScrollTrigger } from "gsap/ScrollTrigger";
+import { random } from "gsap";
+
+const textinner=useRef(null);
+const textRef =useRef([]);
+
+useEffect(()=>{
+    gsap.registerPlugin(ScrollTrigger);
+
+    gsap.fromTo(textRef.current,{
+        y:300,
+        opacity:0,
+    },
+    {<>
+        opacity: 1,
+        duratiom:1,
+        stagger:0.2
+        },
+        ease : "power1.out"
+
+        ScrollTrigger:{
+            trigger: textinner
+        }
+    });
+});
 
 const Card = () => {
     return(<section id="cardType" class="section">
@@ -16,7 +41,7 @@ const Card = () => {
                     <div className="card_body">
                         <div className="tlt">{card.tit}</div>
                         <div className="desc {card.desc} </div>
-                        <a href="/" className="btn">
+                        <a href="className="btn">
 
                         </div>
                             더 자세히 보기<span

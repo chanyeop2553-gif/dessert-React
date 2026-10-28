@@ -8,6 +8,11 @@ const Image = () => {
             key={index}> 
             imageText_inner">
                 {imageData.map((image, index)=>(
+                    <figure
+                    className={`image hover${image.id}`}
+                    key={index}
+                    ref={(el) => (imageRef.current[index] = el)}
+
                 <div id="imagType" class="section">
             <h1 className="blind">이미지 유형 만들기</h1>
             <h2>프리미어 케이크와 디저트를 만나보세요</h2>
@@ -17,7 +22,7 @@ const Image = () => {
             </p>
         </div>
         </figure>
-        ))}
+        ))};
         </section></div>;
 };
 

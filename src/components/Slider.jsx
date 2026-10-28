@@ -1,4 +1,8 @@
 import React from "react";
+import { sliderData } from "../data/SliderData";
+import {Swiper, swiperslide} from "swiper";
+
+import "swiper.css"
 
 const Slider = () => {
     return (
@@ -6,7 +10,7 @@ const Slider = () => {
             <section id="sildeType">
             <h2 class="blind">이미지 유형</h2>
         </section>
-        <div className="swiper mySwiper">
+        <div className="hero">
             <div className="swiper-wrapper">
                 <div className="sildeType"><img src="img/슬라이드 유형.jpg" alt="" /></div>
                 <div className="sildeType"><img src="img/slide img 2.png" alt="" /></div>
